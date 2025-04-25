@@ -23,13 +23,18 @@ body {
   }
   
   .blockquote {
-    background: #f1f1f1;
+    background: #fff0f5; /* or whatever background you like */
     padding: 20px 30px;
     font-style: italic;
-    border-left: 5px solid #6c63ff;
+    border-left: 3px solid #6c63ff;
     margin-top: 30px;
     margin-bottom: 30px;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* ← box shadow added */
   }
+  
   .comment-form {
     background: #fff;
     padding: 40px;
