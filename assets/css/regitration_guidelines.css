@@ -75,6 +75,7 @@ section.blog_area {
 .row {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 /* Guidelines Section */
@@ -155,13 +156,14 @@ section.blog_area {
   background: #ffffff;
   padding: 30px 25px;
   border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-  margin-top: 60px;
+  box-shadow: 0 -10px 20px rgba(8, 0, 0, 0.1), 0 20px 40px rgba(0, 0, 0, 0.08);
+  margin-top: 83px;
   text-align: center;
 }
 
 /* Each Box inside Sidebar */
 .sidebar-box {
+  margin-top: 50px;
   margin-bottom: 50px;
 }
 
@@ -191,7 +193,11 @@ section.blog_area {
 /* Sidebar List */
 .sidebar-box ul {
   list-style: none;
-  padding-left: 0;
+  padding-bottom: 0px;
+  padding-left: 10px;
+}
+.sidebar-box ul li.special{
+  margin-bottom: 0px;
 }
 
 /* List Item */
