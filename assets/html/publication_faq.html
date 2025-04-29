@@ -122,414 +122,480 @@
 
         <!--================Modification Area =================-->
 
-        <section class="blog_area single-post-area section-padding">
-            <div class="container">
-               <div class="row">
-                  <div class="col-lg-8 posts-list">
-                     <div class="single-post">
-                        <div class="feature-img">
-                           <img class="img-fluid" src="../img/blog/single_blog_1.png" alt="">
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Conference FAQs</title>
+            <!-- Bootstrap CSS -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+            <!-- Font Awesome -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+            <!-- Google Fonts -->
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+            <style>
+                /* Custom FAQ Styles */
+                :root {
+                    --registration-color: #4a00e0;
+                    --submission-color: #8e2de2;
+                    --publication-color: #6a3093;
+                }
+                
+                body {
+                    font-family: 'Open Sans', sans-serif;
+                    scroll-behavior: smooth;
+                    background-color: #f9f9ff;
+                }
+                
+                .faq-area {
+                    padding: 80px 0;
+                }
+                
+                .section-tittle h2 {
+                    font-weight: 700;
+                    margin-bottom: 15px;
+                }
+                
+                .section-tittle p {
+                    color: #666;
+                    font-size: 16px;
+                }
+                
+                /* Jump Links Navigation */
+                .jump-links-nav {
+                    background: #fff;
+                    border-radius: 12px;
+                    padding: 30px;
+                    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+                    margin-bottom: 40px;
+                    position: sticky;
+                    top: 20px;
+                    border-top: 4px solid;
+                }
+                
+                .registration-nav {
+                    border-color: var(--registration-color);
+                }
+                
+                .submission-nav {
+                    border-color: var(--submission-color);
+                }
+                
+                .publication-nav {
+                    border-color: var(--publication-color);
+                }
+                
+                .jump-links-nav h3 {
+                    margin-bottom: 20px;
+                    font-size: 20px;
+                }
+                
+                .registration-nav h3 {
+                    color: var(--registration-color);
+                }
+                
+                .submission-nav h3 {
+                    color: var(--submission-color);
+                }
+                
+                .publication-nav h3 {
+                    color: var(--publication-color);
+                }
+                
+                .jump-links-list {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                }
+                
+                .jump-links-list li {
+                    margin-bottom: 12px;
+                }
+                
+                .jump-link {
+                    display: flex;
+                    align-items: center;
+                    color: #333;
+                    text-decoration: none;
+                    transition: all 0.3s ease;
+                    padding: 8px 15px;
+                    border-radius: 6px;
+                }
+                
+                .registration-nav .jump-link:hover {
+                    background: rgba(74, 0, 224, 0.1);
+                    color: var(--registration-color);
+                    transform: translateX(5px);
+                }
+                
+                .submission-nav .jump-link:hover {
+                    background: rgba(142, 45, 226, 0.1);
+                    color: var(--submission-color);
+                    transform: translateX(5px);
+                }
+                
+                .publication-nav .jump-link:hover {
+                    background: rgba(106, 48, 147, 0.1);
+                    color: var(--publication-color);
+                    transform: translateX(5px);
+                }
+                
+                .jump-link i {
+                    margin-right: 10px;
+                    font-size: 14px;
+                }
+                
+                .registration-nav .jump-link i {
+                    color: var(--registration-color);
+                }
+                
+                .submission-nav .jump-link i {
+                    color: var(--submission-color);
+                }
+                
+                .publication-nav .jump-link i {
+                    color: var(--publication-color);
+                }
+                
+                /* Questions Section */
+                .questions-section {
+                    background: #fff;
+                    border-radius: 12px;
+                    padding: 40px;
+                    box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+                }
+                
+                .question-item {
+                    padding: 30px 0;
+                    border-bottom: 1px solid #eee;
+                }
+                
+                .question-item:last-child {
+                    border-bottom: none;
+                }
+                
+                .question-header {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 15px;
+                }
+                
+                .question-number {
+                    color: white;
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 15px;
+                    font-weight: 700;
+                    font-size: 16px;
+                    flex-shrink: 0;
+                }
+                
+                .registration-section .question-number {
+                    background: var(--registration-color);
+                }
+                
+                .submission-section .question-number {
+                    background: var(--submission-color);
+                }
+                
+                .publication-section .question-number {
+                    background: var(--publication-color);
+                }
+                
+                .question-title {
+                    font-weight: 700;
+                    font-size: 20px;
+                    margin: 0;
+                }
+                
+                .registration-section .question-title {
+                    color: var(--registration-color);
+                }
+                
+                .submission-section .question-title {
+                    color: var(--submission-color);
+                }
+                
+                .publication-section .question-title {
+                    color: var(--publication-color);
+                }
+                
+                /* Section Headers */
+                .section-header {
+                    padding: 20px 0;
+                    margin-bottom: 30px;
+                    border-bottom: 1px solid #eee;
+                }
+                
+                .registration-header h2 {
+                    color: var(--registration-color);
+                }
+                
+                .submission-header h2 {
+                    color: var(--submission-color);
+                }
+                
+                .publication-header h2 {
+                    color: var(--publication-color);
+                }
+                
+                /* Back to top button */
+                .back-to-top {
+                    position: fixed;
+                    bottom: 30px;
+                    right: 30px;
+                    width: 50px;
+                    height: 50px;
+                    background: var(--submission-color);
+                    color: white;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-decoration: none;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: all 0.3s ease;
+                    z-index: 999;
+                }
+                
+                .back-to-top.visible {
+                    opacity: 1;
+                    visibility: visible;
+                }
+                
+                .back-to-top:hover {
+                    background: var(--registration-color);
+                    transform: translateY(-5px);
+                }
+        
+                /* Responsive Adjustments */
+                @media (max-width: 991px) {
+                    .jump-links-nav {
+                        position: static;
+                        margin-bottom: 30px;
+                    }
+                    
+                    .questions-section {
+                        padding: 30px 20px;
+                    }
+                }
+                
+                @media (max-width: 767px) {
+                    .faq-area {
+                        padding: 50px 0;
+                    }
+                    
+                    .question-title {
+                        font-size: 18px;
+                    }
+                }
+            </style>
+        </head>
+        <body>
+            <!-- Publication FAQ Section -->
+            <section class="faq-area" id="publication-faq">
+                <div class="container">
+                    <div class="section-header publication-header text-center">
+                        <h2>Publication FAQs</h2>
+                        <p>Information about conference proceedings and publications</p>
+                    </div>
+                    
+                    <div class="row">
+                        <!-- Publication Jump Links -->
+                        <div class="col-lg-4">
+                            <div class="jump-links-nav publication-nav">
+                                <h3>Publication Questions</h3>
+                                <ul class="jump-links-list">
+                                    <li>
+                                        <a href="#pub-q1" class="jump-link">
+                                            <i class="fas fa-arrow-right"></i>
+                                            <span>Conference proceedings</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#pub-q2" class="jump-link">
+                                            <i class="fas fa-arrow-right"></i>
+                                            <span>Indexing information</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#pub-q3" class="jump-link">
+                                            <i class="fas fa-arrow-right"></i>
+                                            <span>Copyright transfer</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#pub-q4" class="jump-link">
+                                            <i class="fas fa-arrow-right"></i>
+                                            <span>Special journal issues</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#pub-q5" class="jump-link">
+                                            <i class="fas fa-arrow-right"></i>
+                                            <span>Publication timeline</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#pub-q6" class="jump-link">
+                                            <i class="fas fa-arrow-right"></i>
+                                            <span>Open access options</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="blog_details">
-                           <h2 style="color: #2d2d2d;">Second divided from form fish beast made every of seas
-                              all gathered us saying he our
-                           </h2>
-                           <ul class="blog-info-link mt-3 mb-4">
-                              <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
-                              <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
-                           </ul>
-                           <p class="excert">
-                              MCSE boot camps have its supporters and its detractors. Some people do not understand why you
-                              should have to spend money on boot camp when you can get the MCSE study materials yourself at a
-                              fraction of the camp price. However, who has the willpower
-                           </p>
-                           <p>
-                              MCSE boot camps have its supporters and its detractors. Some people do not understand why you
-                              should have to spend money on boot camp when you can get the MCSE study materials yourself at a
-                              fraction of the camp price. However, who has the willpower to actually sit through a
-                              self-imposed MCSE training. who has the willpower to actually
-                           </p>
-                           <div class="quote-wrapper">
-                              <div class="quotes">
-                                 MCSE boot camps have its supporters and its detractors. Some people do not understand why you
-                                 should have to spend money on boot camp when you can get the MCSE study materials yourself at
-                                 a fraction of the camp price. However, who has the willpower to actually sit through a
-                                 self-imposed MCSE training.
-                              </div>
-                           </div>
-                           <p>
-                              MCSE boot camps have its supporters and its detractors. Some people do not understand why you
-                              should have to spend money on boot camp when you can get the MCSE study materials yourself at a
-                              fraction of the camp price. However, who has the willpower
-                           </p>
-                           <p>
-                              MCSE boot camps have its supporters and its detractors. Some people do not understand why you
-                              should have to spend money on boot camp when you can get the MCSE study materials yourself at a
-                              fraction of the camp price. However, who has the willpower to actually sit through a
-                              self-imposed MCSE training. who has the willpower to actually
-                           </p>
-                        </div>
-                     </div>
-                     <div class="navigation-top">
-                        <div class="d-sm-flex justify-content-between text-center">
-                           <p class="like-info"><span class="align-middle"><i class="fa fa-heart"></i></span> Lily and 4
-                              people like this</p>
-                           <div class="col-sm-4 text-center my-2 my-sm-0">
-                              <!-- <p class="comment-count"><span class="align-middle"><i class="fa fa-comment"></i></span> 06 Comments</p> -->
-                           </div>
-                           <ul class="social-icons">
-                              <li><a href="https://www.facebook.com/sai4ull"><i class="fab fa-facebook-f"></i></a></li>
-                              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                              <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                              <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                           </ul>
-                        </div>
-                        <div class="navigation-area">
-                           <div class="row">
-                              <div
-                                 class="col-lg-6 col-md-6 col-12 nav-left flex-row d-flex justify-content-start align-items-center">
-                                 <div class="thumb">
-                                    <a href="#">
-                                       <img class="img-fluid" src="assets/img/post/preview.png" alt="">
-                                    </a>
-                                 </div>
-                                 <div class="arrow">
-                                    <a href="#">
-                                       <span class="lnr text-white ti-arrow-left"></span>
-                                    </a>
-                                 </div>
-                                 <div class="detials">
-                                    <p>Prev Post</p>
-                                    <a href="#">
-                                       <h4 style="color: #2d2d2d;">Space The Final Frontier</h4>
-                                    </a>
-                                 </div>
-                              </div>
-                              <div
-                                 class="col-lg-6 col-md-6 col-12 nav-right flex-row d-flex justify-content-end align-items-center">
-                                 <div class="detials">
-                                    <p>Next Post</p>
-                                    <a href="#">
-                                       <h4 style="color: #2d2d2d;">Telescopes 101</h4>
-                                    </a>
-                                 </div>
-                                 <div class="arrow">
-                                    <a href="#">
-                                       <span class="lnr text-white ti-arrow-right"></span>
-                                    </a>
-                                 </div>
-                                 <div class="thumb">
-                                    <a href="#">
-                                       <img class="img-fluid" src="assets/img/post/next.png" alt="">
-                                    </a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="blog-author">
-                        <div class="media align-items-center">
-                           <img src="assets/img/blog/author.png" alt="">
-                           <div class="media-body">
-                              <a href="#">
-                                 <h4>Harvard milan</h4>
-                              </a>
-                              <p>Second divided from form fish beast made. Every of seas all gathered use saying you're, he
-                                 our dominion twon Second divided from</p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="comments-area">
-                        <h4>05 Comments</h4>
-                        <div class="comment-list">
-                           <div class="single-comment justify-content-between d-flex">
-                              <div class="user justify-content-between d-flex">
-                                 <div class="thumb">
-                                    <img src="assets/img/comment/comment_1.png" alt="">
-                                 </div>
-                                 <div class="desc">
-                                    <p class="comment">
-                                       Multiply sea night grass fourth day sea lesser rule open subdue female fill which them
-                                       Blessed, give fill lesser bearing multiply sea night grass fourth day sea lesser
-                                    </p>
-                                    <div class="d-flex justify-content-between">
-                                       <div class="d-flex align-items-center">
-                                          <h5>
-                                             <a href="#">Emilly Blunt</a>
-                                          </h5>
-                                          <p class="date">December 4, 2017 at 3:12 pm </p>
-                                       </div>
-                                       <div class="reply-btn">
-                                          <a href="#" class="btn-reply text-uppercase">reply</a>
-                                       </div>
+                        
+                        <!-- Publication Questions -->
+                        <div class="col-lg-8">
+                            <div class="questions-section publication-section">
+                                <!-- Question 1 -->
+                                <div class="question-item" id="pub-q1">
+                                    <div class="question-header">
+                                        <div class="question-number">1</div>
+                                        <h3 class="question-title">Will conference proceedings be published?</h3>
                                     </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="comment-list">
-                           <div class="single-comment justify-content-between d-flex">
-                              <div class="user justify-content-between d-flex">
-                                 <div class="thumb">
-                                    <img src="assets/img/comment/comment_2.png" alt="">
-                                 </div>
-                                 <div class="desc">
-                                    <p class="comment">
-                                       Multiply sea night grass fourth day sea lesser rule open subdue female fill which them
-                                       Blessed, give fill lesser bearing multiply sea night grass fourth day sea lesser
-                                    </p>
-                                    <div class="d-flex justify-content-between">
-                                       <div class="d-flex align-items-center">
-                                          <h5>
-                                             <a href="#">Emilly Blunt</a>
-                                          </h5>
-                                          <p class="date">December 4, 2017 at 3:12 pm </p>
-                                       </div>
-                                       <div class="reply-btn">
-                                          <a href="#" class="btn-reply text-uppercase">reply</a>
-                                       </div>
+                                </div>
+                                
+                                <!-- Question 2 -->
+                                <div class="question-item" id="pub-q2">
+                                    <div class="question-header">
+                                        <div class="question-number">2</div>
+                                        <h3 class="question-title">Where will the proceedings be indexed?</h3>
                                     </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="comment-list">
-                           <div class="single-comment justify-content-between d-flex">
-                              <div class="user justify-content-between d-flex">
-                                 <div class="thumb">
-                                    <img src="assets/img/comment/comment_3.png" alt="">
-                                 </div>
-                                 <div class="desc">
-                                    <p class="comment">
-                                       Multiply sea night grass fourth day sea lesser rule open subdue female fill which them
-                                       Blessed, give fill lesser bearing multiply sea night grass fourth day sea lesser
-                                    </p>
-                                    <div class="d-flex justify-content-between">
-                                       <div class="d-flex align-items-center">
-                                          <h5>
-                                             <a href="#">Emilly Blunt</a>
-                                          </h5>
-                                          <p class="date">December 4, 2017 at 3:12 pm </p>
-                                       </div>
-                                       <div class="reply-btn">
-                                          <a href="#" class="btn-reply text-uppercase">reply</a>
-                                       </div>
+                                </div>
+                                
+                                <!-- Question 3 -->
+                                <div class="question-item" id="pub-q3">
+                                    <div class="question-header">
+                                        <div class="question-number">3</div>
+                                        <h3 class="question-title">What are the copyright transfer requirements?</h3>
                                     </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="comment-form">
-                        <h4>Leave a Reply</h4>
-                        <form class="form-contact comment_form" action="#" id="commentForm">
-                           <div class="row">
-                              <div class="col-12">
-                                 <div class="form-group">
-                                    <textarea class="form-control w-100" name="comment" id="comment" cols="30" rows="9"
-                                       placeholder="Write Comment"></textarea>
-                                 </div>
-                              </div>
-                              <div class="col-sm-6">
-                                 <div class="form-group">
-                                    <input class="form-control" name="name" id="name" type="text" placeholder="Name">
-                                 </div>
-                              </div>
-                              <div class="col-sm-6">
-                                 <div class="form-group">
-                                    <input class="form-control" name="email" id="email" type="email" placeholder="Email">
-                                 </div>
-                              </div>
-                              <div class="col-12">
-                                 <div class="form-group">
-                                    <input class="form-control" name="website" id="website" type="text" placeholder="Website">
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="form-group">
-                              <button type="submit" class="button button-contactForm btn_1 boxed-btn">Post Comment</button>
-                           </div>
-                        </form>
-                     </div>
-                  </div>
-                  <div class="col-lg-4">
-                     <div class="blog_right_sidebar">
-                        <aside class="single_sidebar_widget search_widget">
-                           <form action="#">
-                              <div class="form-group">
-                                 <div class="input-group mb-3">
-                                    <input type="text" class="form-control" placeholder='Search Keyword'
-                                       onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search Keyword'">
-                                    <div class="input-group-append">
-                                       <button class="btns" type="button"><i class="ti-search"></i></button>
+                                </div>
+                                
+                                <!-- Question 4 -->
+                                <div class="question-item" id="pub-q4">
+                                    <div class="question-header">
+                                        <div class="question-number">4</div>
+                                        <h3 class="question-title">Will there be special journal issues for selected papers?</h3>
                                     </div>
-                                 </div>
-                              </div>
-                              <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
-                                 type="submit">Search</button>
-                           </form>
-                        </aside>
-                        <aside class="single_sidebar_widget post_category_widget">
-                           <h4 class="widget_title" style="color: #2d2d2d;">Category</h4>
-                           <ul class="list cat-list">
-                              <li>
-                                 <a href="#" class="d-flex">
-                                    <p>Resaurant food</p>
-                                    <p>(37)</p>
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="#" class="d-flex">
-                                    <p>Travel news</p>
-                                    <p>(10)</p>
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="#" class="d-flex">
-                                    <p>Modern technology</p>
-                                    <p>(03)</p>
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="#" class="d-flex">
-                                    <p>Product</p>
-                                    <p>(11)</p>
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="#" class="d-flex">
-                                    <p>Inspiration</p>
-                                    <p>(21)</p>
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="#" class="d-flex">
-                                    <p>Health Care</p>
-                                    <p>(21)</p>
-                                 </a>
-                              </li>
-                           </ul>
-                        </aside>
-                        <aside class="single_sidebar_widget popular_post_widget">
-                           <h3 class="widget_title" style="color: #2d2d2d;">Recent Post</h3>
-                           <div class="media post_item">
-                              <img src="assets/img/post/post_1.png" alt="post">
-                              <div class="media-body">
-                                 <a href="blog_details.html">
-                                    <h3 style="color: #2d2d2d;">From life was you fish...</h3>
-                                 </a>
-                                 <p>January 12, 2019</p>
-                              </div>
-                           </div>
-                           <div class="media post_item">
-                              <img src="assets/img/post/post_2.png" alt="post">
-                              <div class="media-body">
-                                 <a href="blog_details.html">
-                                    <h3 style="color: #2d2d2d;">The Amazing Hubble</h3>
-                                 </a>
-                                 <p>02 Hours ago</p>
-                              </div>
-                           </div>
-                           <div class="media post_item">
-                              <img src="assets/img/post/post_3.png" alt="post">
-                              <div class="media-body">
-                                 <a href="blog_details.html">
-                                    <h3 style="color: #2d2d2d;">Astronomy Or Astrology</h3>
-                                 </a>
-                                 <p>03 Hours ago</p>
-                              </div>
-                           </div>
-                           <div class="media post_item">
-                              <img src="assets/img/post/post_4.png" alt="post">
-                              <div class="media-body">
-                                 <a href="blog_details.html">
-                                    <h3 style="color: #2d2d2d;">Asteroids telescope</h3>
-                                 </a>
-                                 <p>01 Hours ago</p>
-                              </div>
-                           </div>
-                        </aside>
-                        <aside class="single_sidebar_widget tag_cloud_widget">
-                           <h4 class="widget_title" style="color: #2d2d2d;">Tag Clouds</h4>
-                           <ul class="list">
-                              <li>
-                                 <a href="#">project</a>
-                              </li>
-                              <li>
-                                 <a href="#">love</a>
-                              </li>
-                              <li>
-                                 <a href="#">technology</a>
-                              </li>
-                              <li>
-                                 <a href="#">travel</a>
-                              </li>
-                              <li>
-                                 <a href="#">restaurant</a>
-                              </li>
-                              <li>
-                                 <a href="#">life style</a>
-                              </li>
-                              <li>
-                                 <a href="#">design</a>
-                              </li>
-                              <li>
-                                 <a href="#">illustration</a>
-                              </li>
-                           </ul>
-                        </aside>
-                        <aside class="single_sidebar_widget instagram_feeds">
-                           <h4 class="widget_title" style="color: #2d2d2d;">Instagram Feeds</h4>
-                           <ul class="instagram_row flex-wrap">
-                              <li>
-                                 <a href="#">
-                                    <img class="img-fluid" src="assets/img/post/post_5.png" alt="">
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="#">
-                                    <img class="img-fluid" src="assets/img/post/post_6.png" alt="">
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="#">
-                                    <img class="img-fluid" src="assets/img/post/post_7.png" alt="">
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="#">
-                                    <img class="img-fluid" src="assets/img/post/post_8.png" alt="">
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="#">
-                                    <img class="img-fluid" src="assets/img/post/post_9.png" alt="">
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="#">
-                                    <img class="img-fluid" src="assets/img/post/post_10.png" alt="">
-                                 </a>
-                              </li>
-                           </ul>
-                        </aside>
-                        <aside class="single_sidebar_widget newsletter_widget">
-                           <h4 class="widget_title" style="color: #2d2d2d;">Newsletter</h4>
-                           <form action="#">
-                              <div class="form-group">
-                                 <input type="email" class="form-control" onfocus="this.placeholder = ''"
-                                    onblur="this.placeholder = 'Enter email'" placeholder='Enter email' required>
-                              </div>
-                              <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
-                                 type="submit">Subscribe</button>
-                           </form>
-                        </aside>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-
+                                </div>
+                                
+                                <!-- Question 5 -->
+                                <div class="question-item" id="pub-q5">
+                                    <div class="question-header">
+                                        <div class="question-number">5</div>
+                                        <h3 class="question-title">What is the timeline for publication?</h3>
+                                    </div>
+                                </div>
+                                
+                                <!-- Question 6 -->
+                                <div class="question-item" id="pub-q6">
+                                    <div class="question-header">
+                                        <div class="question-number">6</div>
+                                        <h3 class="question-title">Are there open access publication options?</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Back to top button -->
+            <a href="#" class="back-to-top" id="backToTop">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        
+            <!-- Bootstrap JS Bundle with Popper -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            
+            <script>
+                // Smooth scrolling for jump links
+                document.querySelectorAll('.jump-link').forEach(link => {
+                    link.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const targetId = this.getAttribute('href');
+                        const targetElement = document.querySelector(targetId);
+                        
+                        if (targetElement) {
+                            window.scrollTo({
+                                top: targetElement.offsetTop - 100,
+                                behavior: 'smooth'
+                            });
+                        }
+                    });
+                });
+                
+                // Back to top button functionality
+                const backToTopButton = document.getElementById('backToTop');
+                
+                window.addEventListener('scroll', function() {
+                    if (window.pageYOffset > 300) {
+                        backToTopButton.classList.add('visible');
+                    } else {
+                        backToTopButton.classList.remove('visible');
+                    }
+                });
+                
+                backToTopButton.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+                
+                // Highlight current question in jump links when scrolling
+                const questionItems = document.querySelectorAll('.question-item');
+                const jumpLinks = document.querySelectorAll('.jump-link');
+                
+                window.addEventListener('scroll', function() {
+                    let current = '';
+                    
+                    questionItems.forEach(question => {
+                        const questionTop = question.offsetTop;
+                        const questionHeight = question.clientHeight;
+                        
+                        if (window.scrollY >= (questionTop - 150)) {
+                            current = '#' + question.getAttribute('id');
+                        }
+                    });
+                    
+                    jumpLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === current) {
+                            link.classList.add('active');
+                            
+                            // Set different hover colors based on section
+                            if (link.closest('.registration-nav')) {
+                                link.style.backgroundColor = 'rgba(74, 0, 224, 0.1)';
+                                link.style.color = 'var(--registration-color)';
+                            } else if (link.closest('.submission-nav')) {
+                                link.style.backgroundColor = 'rgba(142, 45, 226, 0.1)';
+                                link.style.color = 'var(--submission-color)';
+                            } else if (link.closest('.publication-nav')) {
+                                link.style.backgroundColor = 'rgba(106, 48, 147, 0.1)';
+                                link.style.color = 'var(--publication-color)';
+                            }
+                            
+                            link.style.transform = 'translateX(5px)';
+                        } else {
+                            link.style.backgroundColor = '';
+                            link.style.color = '';
+                            link.style.transform = '';
+                        }
+                    });
+                });
+            </script>
+        </body>
+        </html>
 
 
 
