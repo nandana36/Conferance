@@ -1,56 +1,96 @@
-.session-section {
-  padding: 40px 20px;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f5f5;
+}
+
+.conference-tracks {
+  padding: 60px 20px;
   text-align: center;
 }
 
-.session-section h1 {
-  font-size: 32px;
-  color: #1a1a1a;
-  margin-bottom: 30px;
+.conference-tracks h1 {
+  font-size: 2.4rem;
+  margin-bottom: 40px;
+  color: #1e1e2f;
 }
 
 .tracks-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  padding: 0 20px;
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .track-card {
-  background: linear-gradient(to right, #2b2c64, #79136d);
-  color: white;
-  padding: 30px 20px;
-  border-radius: 10px;
+  background: white;
+  padding: 20px 30px;
+  border-radius: 12px;
   text-decoration: none;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  position: relative;
-  overflow: hidden;
+  color: #1a1a1a;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 .track-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  background-color: #2c2d64;
+  color: white; /* <- this line makes the text white */
 }
-
-.track-card h2 {
-  font-size: 20px;
-  margin: 0;
+.track-card:hover *,
+.track-card:hover {
+  color: white !important;
 }
-
-/* Optional: Add background image overlay */
-.track-card::before {
-  content: '';
-  background: url('your-background-image.jpg') no-repeat center center / cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0.1;
-  z-index: 0;
+.track-card.wireless {
+  background-image: url('images/bgimage.jpg');
 }
-
-.track-card h2 {
-  position: relative;
-  z-index: 1;
+.track-card.rf {
+  background-image: url('images/bgimage.jpg');
+}
+.track-card.signal {
+  background-image: url('images/bgimage.jpg');
+}
+.track-card.radio {
+  background-image: url('images/bgimage.jpg');
+}
+.track-card.micro {
+  background-image: url('images/bgimage.jpg');
+}
+.track-card.optical {
+  background-image: url('images/bgimage.jpg');
+}
+.track-card.ai {
+  background-image: url('images/bgimage.jpg');
+}
+.track-card.cloud {
+  background-image: url('images/bgimage.jpg');
+}
+.track-card.cyber {
+  background-image: url('images/bgimage.jpg');
+}
+.track-card.iot {
+  background-image: url('images/bgimage.jpg');
+}
+.track-card.blockchain {
+  background-image: url('images/bgimage.jpg');
+}
+.track-card.quantum {
+  background-image: url('images/bgimage.jpg');
+}
+.track-card.hci {
+  background-image: url('images/bgimage.jpg');
+}
+.track-card.robotics {
+  background-image: url('images/bgimage.jpg');
+}
+.track-card.green-tech {
+  background-image: url('images/bgimage.jpg');
+}
+.track-card.healthcare {
+  background-image: url('images/bgimage.jpg');
 }
