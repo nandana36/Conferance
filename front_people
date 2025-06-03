@@ -1,0 +1,175 @@
+<!--? Brand Area Start -->
+    <section class="team-area pt-180 pb-100 section-bg" data-background="assets/img/gallery/section_bg02.png">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-9">
+                    <!-- Section Tittle -->
+                    <div class="section-tittle section-tittle2 mb-50">
+                        <h2>Key People</h2>
+                        <a href="#" class="btn white-btn mt-30">View Top</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-team mb-30">
+                        <div class="team-img">
+                            <img src="assets/img/gallery/team1.png" alt="">
+                            <!-- Blog Social -->
+                            <ul class="team-social">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fas fa-globe"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-caption">
+                            <h3><a href="#">Dr. Anithakumari S</a></h3>
+                            <p> General Chair</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-team mb-30">
+                        <div class="team-img">
+                            <img src="assets/img/gallery/team2.png" alt="">
+                            <!-- Blog Social -->
+                            <ul class="team-social">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fas fa-globe"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-caption">
+                            <h3><a href="#">Dr. Suma Sekhar</a></h3>
+                            <p>Co-General Chair</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-team mb-30">
+                        <div class="team-img">
+                            <img src="assets/img/gallery/team3.png" alt="">
+                            <!-- Blog Social -->
+                            <ul class="team-social">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fas fa-globe"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-caption">
+                            <h3><a href="#">Dr. Sumithra M. D.</a></h3>
+                            <p> TPC chair(s)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-team mb-30">
+                        <div class="team-img">
+                            <img src="assets/img/gallery/team4.png" alt="">
+                            <!-- Blog Social -->
+                            <ul class="team-social">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fas fa-globe"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-caption">
+                            <h3><a href="#">Dr. Dileep V. K.</a></h3>
+                            <p>Publication Chair(s)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-team mb-30">
+                        <div class="team-img">
+                            <img src="assets/img/gallery/team5.png" alt="">
+                            <!-- Blog Social -->
+                            <ul class="team-social">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fas fa-globe"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-caption">
+                            <h3><a href="#">Prof. Soju Ravi K.</a></h3>
+                            <p>Publicity Chair(s)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-team mb-30">
+                        <div class="team-img">
+                            <img src="assets/img/gallery/team6.png" alt="">
+                            <!-- Blog Social -->
+                            <ul class="team-social">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fas fa-globe"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-caption">
+                            <h3><a href="#">Hema S.</a></h3>
+                            <p>Finance Committe Chair(s)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Brand Area End -->  
+
+
+
+
+      <!--? Blog Area Start -->
+    <section class="home-blog-area section-padding30">
+        <div class="container">
+            <!-- Section Tittle -->
+            <div class="row justify-content-center">
+                <div class="col-lg-5 col-md-8">
+                    <div class="section-tittle text-center mb-50">
+                        <h2>News From Blog</h2>
+                        <p>There arge many variations ohf passages of sorem gp ilable, but the majority have ssorem gp iluffe.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6">
+                    <div class="home-blog-single mb-30">
+                        <div class="blog-img-cap">
+                            <div class="blog-img">
+                                <img src="assets/img/gallery/home-blog1.png" alt="">
+                                <!-- Blog date -->
+                                <div class="blog-date text-center">
+                                    <span>24</span>
+                                    <p>Now</p>
+                                </div>
+                            </div>
+                            <div class="blog-cap">
+                                <p>|   Physics</p>
+                                <h3><a href="blog_details.html">Footprints in Time is perfect House in Kurashiki</a></h3>
+                                <a href="blog_details.html" class="more-btn">Read more »</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6">
+                    <div class="home-blog-single mb-30">
+                        <div class="blog-img-cap">
+                            <div class="blog-img">
+                                <img src="assets/img/gallery/home-blog2.png" alt="">
+                                <!-- Blog date -->
+                                <div class="blog-date text-center">
+                                    <span>24</span>
+                                    <p>Now</p>
+                                </div>
+                            </div>
+                            <div class="blog-cap">
+                                <p>|   Physics</p>
+                                <h3><a href="blog_details.html">Footprints in Time is perfect House in Kurashiki</a></h3>
+                                <a href="blog_details.html" class="more-btn">Read more »</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
