@@ -22,103 +22,8 @@
     <link rel="stylesheet" href="../css/nice-select.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/responsive.css">
-    <style>
-/* Abstract Submission Form Styles */
-.abstract-submission-form {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.abstract-submission-form h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.abstract-submission-form label {
-    font-weight: bold;
-    display: block;
-    margin-top: 10px;
-}
-
-.abstract-submission-form input,
-.abstract-submission-form select,
-.abstract-submission-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.abstract-submission-form button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
-}
-.form-group{
-    margin-bottom: 15px;
-}
-label{
-    display: block;
-    margin-bottom: 5px;
-}
-.form-group1{
-    margin-bottom: 15px;
-}
-label{
-    display: block;
-    margin-bottom: 5px;
-}
-/* Make Header Fixed */
-/* Header Basic */
-.header-area {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    background: white;
-    z-index: 999;
-    transition: all 0.3s ease;
-}
-
-/* Shrinking Effect */
-.header-area.shrink {
-    padding: 5px 0;
-    background: white;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Shrink the Logo */
-.header-area.shrink .logo img {
-    max-height: 40px; /* Make logo smaller */
-    transition: all 0.3s ease;
-}
-
-/* Shrink the navigation links */
-.header-area.shrink .main-menu ul li a {
-    font-size: 14px;  /* smaller text */
-    padding: 10px 15px; /* smaller space around text */
-    transition: all 0.3s ease;
-}
-
-/* Important: move main page content below fixed header */
-.slider-area2 {
-    margin-top: 120px; /* Adjust based on your header height */
-}
-
-.abstract-submission-form button:hover {
-    background-color: #45a049;
-}
-
-</style>
+    <link rel="stylesheet" href="../css/regitration_guidelines.css">
+    <link rel="stylesheet" href="../css/themes.css">
 
 </head>
 <body>
@@ -154,7 +59,7 @@ label{
                                         <ul id="navigation">
                                             <li><a href="../../index.html">Home</a></li>
                                             <li><a href="about.html">About</a></li>
-                                            <li><a href="committee.html">Committee</a></li>
+                                            <li><a href="spakers.html">Committee</a></li>
                                             <li><a href="../html/paper_submission.htm">Submission</a>
                                             <ul class="submenu">
                                                 <li><a href="../html/paper_submission.html">Paper/Abstract Submission</a></li>
@@ -165,10 +70,11 @@ label{
                                             <li><a href="blog.html">Registration</a>
                                                 <ul class="submenu">
                                                     <li><a href="../html/registration_guidelines.html">Registration Guidelines</a></li>
-                                                    <li><a href="../html/registration_guidelines.html">Registration FAQ</a></li>
+                                                    <li><a href="../html/registration_faq.html">Registration FAQ</a></li>
                                                     
                                                 </ul>
                                             </li>
+                                            
                                             <li><a href="blog.html">Publication</a>
                                                 <ul class="submenu">
                                                     <li><a href="../html/publication_ethics.html">Plagiarism Policy & Publication Ethics</a></li>
@@ -203,7 +109,7 @@ label{
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="hero-cap hero-cap2 text-center">
-                                <h2>Blog</h2>
+                                <h2>SESSION & THEMES</h2>
                             </div>
                         </div>
                     </div>
@@ -212,139 +118,120 @@ label{
         </div>
         <!-- Hero End -->
 
+    <!-- THEMES -->
+      
+    <section class="conference-tracks">
+  <h1>THEMES</h1>
+  <div class="tracks-container">
+    <a href="wireless.html" class="track-card wireless">
+      <div class="overlay"></div>
+      <div class="card-content">
+        <h2>WIRELESS COMMUNICATIONs & MOBILE NETWORKS</h2>
+      </div>
+    </a>
+    <a href="rf.html" class="track-card rf">
+      <div class="overlay"></div>
+      <div class="card-content">
+        <h2>RF CIRCUITS, SYSTEMS & ANTENNAS</h2>
+      </div>
+    </a>
+    <a href="signal-image.html" class="track-card signal">
+      <div class="overlay"></div>
+      <div class="card-content">
+        <h2>SIGNAL & IMAGE PROCESSING</h2>
+      </div>
+    </a>
+    <a href="cognitive-radio.html" class="track-card radio">
+      <div class="overlay"></div>
+      <div class="card-content">
+        <h2>COGNITIVE RADIO & SPECTRUM MANAGEMENT</h2>
+      </div>
+    </a>
+    <a href="microelectronics.html" class="track-card micro">
+      <div class="overlay"></div>
+      <div class="card-content">
+        <h2>MICROELECTRONICS, MEMS & NANOTECHNOLOGIES</h2>
+      </div>
+    </a>
+    <a href="optical-satellite.html" class="track-card optical">
+      <div class="overlay"></div>
+      <div class="card-content">
+        <h2>OPTICAL & SATELLITE COMMUNICATION TECHNOLOGIES</h2>
+      </div>
+    </a>
+    <a href="ai-ml.html" class="track-card ai">
+      <div class="overlay"></div>
+      <div class="card-content">
+        <h2>ARTIFICIAL INTELLIGENCE & MACHINE LEARNING</h2>
+      </div>
+    </a>
+    <a href="cloud-bigdata.html" class="track-card cloud">
+      <div class="overlay"></div>
+      <div class="card-content">
+        <h2>CLOUD COMPUTING & BIG DATA ANALYTICS</h2>
+      </div>
+    </a>
+    <a href="cybersecurity.html" class="track-card cyber">
+      <div class="overlay"></div>
+      <div class="card-content">
+        <h2>CYBERSECURITY & DATA PRIVACY</h2>
+      </div>
+    </a>
+    <a href="iot.html" class="track-card iot">
+      <div class="overlay"></div>
+      <div class="card-content">
+        <h2>INTERNET OF THINGS(IoT) & SMART SYSTEMS</h2>
+      </div>
+    </a>
+    <a href="blockchain.html" class="track-card blockchain">
+      <div class="overlay"></div>
+      <div class="card-content">
+        <h2>BLOCKCHAIN & CRYPTOGRAPHIC SYSTEMS</h2>
+      </div>
+    </a>
+    <a href="quantum.html" class="track-card quantum">
+      <div class="overlay"></div>
+      <div class="card-content">
+        <h2>QUANTUM COMPUTING & EMERGING TECHNOLOGIES</h2>
+      </div>
+    </a>
+    <a href="hci-vr.html" class="track-card hci">
+      <div class="overlay"></div>
+      <div class="card-content">
+        <h2>HUMAN-COMPUTER INTERACTION & VIRTUAL REALITY</h2>
+      </div>
+    </a>
+    <a href="robotics.html" class="track-card robotics">
+      <div class="overlay"></div>
+      <div class="card-content">
+        <h2>ROBOTICS, CONTROL & AUTOMATION</h2>
+      </div>
+    </a>
+    <a href="green-tech.html" class="track-card green-tech">
+      <div class="overlay"></div>
+      <div class="card-content">
+        <h2>GREEN & SUSTAINABLE COMMUNICATION TECHNOLOGIES</h2>
+      </div>
+    </a>
+    <a href="healthcare.html" class="track-card healthcare">
+      <div class="overlay"></div>
+      <div class="card-content">
+        <h2>HEALTHCARE DEVICES & TECHNOLOGIES</h2>
+      </div>
+    </a>
+  </div>
+</section>
+ <!--THEMES -->
 
 
 
 
 
-
-        <!--================Modification Area =================-->
-
-               <!-- Abstract Submission Form -->
-<div class="abstract-submission-form">
-    <div class="form-group">
-   <h2>Abstract Submission</h2>
-   <form action="submit_abstract.php" method="POST" enctype="multipart/form-data">
-       <label for="submissionType">Submission Type*</label>
-       <select id="submissionType" name="submissionType" required>
-           <option value="abstract">Abstract Submission</option>
-           <option value="fullPaper">Full Paper Submission</option>
-       </select>
-    </div>
-       <br>
-       
-        <label for="paperTitle">Paper Title*</label>
-        <input type="text"   id="paperTitle" name="paperTitle" required>
-    
-    <div class="form-group">
-       <label for="authorName">Author Name*:</label>
-       <input type="text" id="authorName" name="authorName" required>
-
-       <label for="email">Email ID*</label>
-       <input type="email" id="email" name="email" required>
-
-       <label for="coAuthorName">Co-author Name:</label>
-       <input type="text" id="coAuthorName" name="coAuthorName">
-
-       <label for="coAuthorEmail">Co-author Email ID:</label>
-       <input type="email" id="coAuthorEmail" name="coAuthorEmail">
-
-       <label for="abstract">Abstract:</label>
-       <textarea id="abstract" name="abstract" rows="4" required></textarea>
-
-       <label for="phoneNumber">Phone Number*</label>
-       <input type="text" id="phoneNumber" name="phoneNumber" required>
-
-       <label for="whatsappNumber">Whatsapp/Viber Number*</label>
-       <input type="text" id="whatsappNumber" name="whatsappNumber">
-    </div>
-    <div class="form-group">
-
-       <label for="presentationType">Presentation Type*</label>
-       <select id="presentationType" name="presentationType" required>
-           <option value="physical">Physical Presentation</option>
-           <option value="virtual">Virtual Presentation</option>
-           <option value="poster">Poster Presentation</option>
-       </select>
-    </div>
-    <br>
-       <label for="university">University/Institute/Organization Name*</label>
-       <input type="text" id="university" name="university" required>
-
-       <label for="designation">Designation*</label>
-       <input type="text" id="designation" name="designation" required>
-
-       <label for="linkedin">LinkedIn URL:</label>
-       <input type="url" id="linkedin" name="linkedin">
-
-       <label for="facebook">Facebook URL:</label>
-       <input type="url" id="facebook" name="facebook">
-
-       <label for="department">Department*</label>
-       <input type="text" id="department" name="department" required>
-    
-    <div class="form-group1">
-       <label for="publication">Publication Interest*</label>
-       <select id="publication" name="publication" required>
-           <option value="yes">Yes</option>
-           <option value="no">No</option>
-       </select>
-    </div>
-    <br>
-    <div class="form-group">
-       <label for="publicationJournal">Publication in Journal:</label>
-       <select id="publicationJournal" name="publicationJournal">
-           <option value="scopus">Scopus Journal</option>
-           <option value="webOfScience">Web Of Science Journal</option>
-           <option value="googleScholar">Google Scholar Journal</option>
-       </select>
-    </div>
-    <br>
-    <div class="form-group">
-       <label for="abstractFile">Upload Abstract (Word file, max 3MB):</label>
-       <input type="file" id="abstractFile" name="abstractFile" accept=".doc,.docx" required>
-    </div>
-       <label for="referral">How did you get to know about the Conference?</label>
-       <select id="referral" name="referral" required>
-           <option value="conferenceAlerts">Conference Alerts</option>
-           <option value="email">Email</option>
-           <option value="googleSearch">Google Search</option>
-           <option value="googleAdvertisement">Google Advertisement</option>
-           <option value="referredByMember">Referred by Organizing Committee Member</option>
-           <option value="socialMedia">Social Media</option>
-           <option value="university">Through the University/Institute/College</option>
-           <option value="friend">Friend</option>
-           <option value="other">Other</option>
-       </select>
-    <br>
-       <button type="submit" style="margin-top:20px;">Submit Your Paper</button>
-   </form>
-</div>
+     
 
 
 
-
-        <!--================Modification Area  End=================-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
     </main>
-
-
-
-
-    
     <footer>
         <!-- Footer Start-->
         <div class="footer-area footer-padding">
@@ -427,12 +314,12 @@ label{
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
                     <div class="footer-tittle-bottom">
-                        
+                       
                     </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
                         <div class="footer-tittle-bottom">
-                           
+                            <
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
@@ -508,40 +395,6 @@ label{
     <!-- Jquery Plugins, main Jquery -->	
     <script src="../js/plugins.js"></script>
     <script src="../js/main.js"></script>
-
-    <script>
-document.querySelector('form').addEventListener('submit', function(event) {
-    let isValid = true;
-    const requiredFields = document.querySelectorAll('input[required], select[required], textarea[required]');
-    requiredFields.forEach(function(field) {
-        if (!field.value.trim()) {
-            isValid = false;
-            field.style.borderColor = 'red';
-        } else {
-            field.style.borderColor = '';
-        }
-    });
-    if (!isValid) {
-        event.preventDefault();
-        alert('Please fill all required fields.');
-    }
-   
-});
-</script>
-<script>
-    window.addEventListener('scroll', function() {
-        var header = document.querySelector('.header-area');
-        if (window.scrollY > 50) {
-            header.classList.add('shrink');
-        } else {
-            header.classList.remove('shrink');
-        }
-    });
-</script>
-
-
-
-
     
     </body>
 </html>
