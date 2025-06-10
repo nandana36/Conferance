@@ -86,7 +86,6 @@ section.blog_area {
   box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.1), 0 20px 40px rgba(0, 0, 0, 0.08);
   max-width: 900px;
   margin: 60px auto;
-  transition: all 0.4s ease;
 }
 
 .guidelines-section h2 {
@@ -116,7 +115,6 @@ section.blog_area {
   margin-bottom: 24px;
   position: relative;
   padding-left: 30px;
-  transition: all 0.3s ease;
 }
 
 .guidelines-section p::before {
@@ -127,7 +125,6 @@ section.blog_area {
   color: #6a0dad;
   font-size: 20px;
   font-weight: bold;
-  transition: color 0.3s ease;
 }
 
 .guidelines-section p.excert {
@@ -142,114 +139,8 @@ section.blog_area {
 
 .guidelines-section p:hover {
   color: #6a0dad;
-  background: #f0f0ff;
-  border-radius: 8px;
-  padding-left: 34px;
-  cursor: pointer;
-}
-
-.guidelines-section p:hover::before {
-  color: #331391;
-}
-/* Sidebar */
-.sidebar {
-  background: #ffffff;
-  padding: 30px 25px;
-  border-radius: 16px;
-  box-shadow: 0 -10px 20px rgba(8, 0, 0, 0.1), 0 20px 40px rgba(0, 0, 0, 0.08);
-  margin-top: 83px;
-  text-align: center;
-}
-
-/* Each Box inside Sidebar */
-.sidebar-box {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-/* Sidebar Heading */
-.sidebar-box h3 {
-  font-size: 24px;
-  font-weight: 800;
-  color: #331391;
-  margin-bottom: 25px;
-  position: relative;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.sidebar-box h3::after {
-  content: '';
-  width: 40px;
-  height: 3px;
-  background: #6a0dad;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -8px;
-  border-radius: 2px;
-}
-
-/* Sidebar List */
-.sidebar-box ul {
-  list-style: none;
-  padding-bottom: 0px;
-  padding-left: 10px;
-}
-.sidebar-box ul li.special{
-  margin-bottom: 0px;
-}
-
-/* List Item */
-.sidebar-box ul li {
-  margin-bottom: 18px;
-  position: relative;
-  padding: 18px 20px;
-  border-radius: 12px;
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  min-height: 80px; /* enough height for longer texts */
-  background: #fff;
-  font-size: 20px;
-}
-
-/* Icon Bullet */
-.sidebar-box ul li::before {
-  content: '➔';
-  position: absolute;
-  left: 20px;
-  font-size: 20px;
-  color: #6a0dad;
   transition: color 0.3s ease;
 }
-
-/* Hover Effects with Box */
-.sidebar-box ul li:hover {
-  background: #331391; /* Purple background on hover */
-  transform: translateY(-2px) scale(1.02);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-  cursor: pointer;
-  color: #fff;
-  font-size: 20px;
-}
-
-.sidebar-box ul li:hover::before {
-  color: #ffffff; /* Icon turns white */
-}
-
-.sidebar-box ul li a:hover {
-  color: #ffffff; /* Text turns white */
-  text-decoration: none;
-}
-
-
-/* Contact Info Text */
-.sidebar-box p {
-  font-size: 17px;
-  color: #ffffff;
-  line-height: 1.7;
-  margin-bottom: 10px;
+.guidelines-section p:hover::before {
+  color: #331391;
 }

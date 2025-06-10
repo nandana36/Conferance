@@ -1,0 +1,45 @@
+.features-section {
+  background-color: #2e0e8c;
+  padding: 60px 20px;
+}
+
+.section-title {
+  text-align: center;
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.feature-card {
+  background-color: #fff;
+  border-left: 6px solid #6c63ff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 16px 16px 20px rgba(51, 19, 145, 0.1);
+}
+
+.feature-card h3 {
+  color: #331391;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  color: #444;
+  font-size: 1rem;
+}
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #fff;
+  margin: 1px 550px;
+  border-radius: 2px;
+}
