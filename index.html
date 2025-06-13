@@ -63,6 +63,44 @@
     margin-bottom: 0;
     color: #666;
 }
+/* Purpose Section */
+.purpose-section {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+}
+
+.section-title h2 {
+  font-size: 55px;     /* match Objectives heading size */
+    font-weight: 700;    /* bold like Objectives */
+    color: #1c1c50;
+    margin-bottom: 40px
+}
+
+.purpose-box {
+  
+  
+    background: #fff;
+    border-radius: 60px;
+    padding: 50px;                   /* more space inside */
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.08); /* deeper shadow */
+    font-size: 60px;                /* slightly larger text */
+    color: #333;
+    line-height: 1.8;
+}
+.zoom-touch {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.zoom-touch:hover,
+.zoom-touch:active {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* optional glow */
+}
+
+
+
+
+
   </style>
 </head>
 <body>
@@ -264,6 +302,25 @@
             </div>
         </div>
     </section>
+<!--Purpose-->
+<section id="purpose" class="purpose-section section-padding">
+  <div class="container">
+    <div class="section-title text-center mb-80">
+     <h2>Purpose</h2>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="purpose-box zoom-touch">
+
+          <p>
+            The purpose of <strong>ICCSC 2026</strong> is to promote the immense potential of Intelligent Computing and Next-Gen Communication. The conference strives to drive innovation by providing a platform for the exchange of ideas, recent research advancements, and interdisciplinary collaboration in computational systems and communication technologies.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
     <!-- About Law End-->
     <!--? Objectives Start -->
 <section class="objectives-area section-padding2">
