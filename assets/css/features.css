@@ -8,6 +8,17 @@
   color: #fff;
   font-size: 2.5rem;
   margin-bottom: 40px;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #fff;
+  margin: 1px auto;
+  border-radius: 2px;
 }
 
 .features-grid {
@@ -24,6 +35,12 @@
   box-shadow: 16px 16px 20px rgba(51, 19, 145, 0.1);
 }
 
+.feature-icon {
+  font-size: 2.5rem;
+  color: #331391;
+  margin-bottom: 15px;
+}
+
 .feature-card h3 {
   color: #331391;
   font-size: 1.25rem;
@@ -33,18 +50,4 @@
 .feature-card p {
   color: #444;
   font-size: 1rem;
-}
-.section-title::after {
-  content: '';
-  display: block;
-  width: 60px;
-  height: 4px;
-  background-color: #fff;
-  margin: 1px 550px;
-  border-radius: 2px;
-}
-.feature-icon {
-  font-size: 2.5rem;
-  color: #331391;
-  margin-bottom: 15px;
 }
