@@ -27,82 +27,165 @@
     <link rel="stylesheet" href="assets/css/themes.css">
     <link rel="stylesheet" href="assets/css/features.css">
   <style>
-    /* Objectives Section */
+    /* Objectives Section - Enhanced Attractive Styles */
 .objectives-area {
-    background: #f9f9f9;
+    background: linear-gradient(135deg, #f8f9ff 0%, #f0f3ff 100%);
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
 }
+
+.objectives-area::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('assets/img/pattern-bg.png') repeat;
+    opacity: 0.03;
+    z-index: 0;
+}
+
+.section-tittle.objectives-title h2 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #2e0e8c;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 60px;
+}
+
+.section-tittle.objectives-title h2::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+    border-radius: 2px;
+}
+
+.objectives-list {
+    position: relative;
+    z-index: 1;
+}
+
 .objectives-list ul {
     list-style: none;
     padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
 }
+
 .single-objective {
     display: flex;
-    align-items: flex-start;
-    margin-bottom: 30px;
-    padding: 30px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    transition: all 0.3s ease;
+    flex-direction: column;
+    background: white;
+    border-radius: 12px;
+    padding: 40px 30px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-left: 4px solid transparent;
+    position: relative;
+    overflow: hidden;
 }
+
 .single-objective:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #2575fc;
 }
+
+.single-objective::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(106, 17, 203, 0.03) 0%, rgba(37, 117, 252, 0.03) 100%);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.single-objective:hover::before {
+    opacity: 1;
+}
+
 .objective-icon {
-    margin-right: 25px;
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 20px rgba(37, 117, 252, 0.2);
 }
+
 .objective-icon span {
-    font-size: 50px;
-    color: #2e0e8c;
+    font-size: 32px;
+    color: white;
 }
+
 .objective-caption h4 {
     font-size: 22px;
+    font-weight: 700;
     margin-bottom: 15px;
     color: #2e0e8c;
+    position: relative;
+    display: inline-block;
 }
+
+.objective-caption h4::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background: #2575fc;
+    transition: width 0.3s ease;
+}
+
+.single-objective:hover .objective-caption h4::after {
+    width: 80px;
+}
+
 .objective-caption p {
-    margin-bottom: 0;
     color: #666;
-}
-/* Purpose Section */
-.purpose-section {
-  background-color: #f9f9f9;
-  padding: 60px 0;
+    line-height: 1.7;
+    margin-bottom: 0;
+    font-size: 16px;
 }
 
-.section-title h2 {
-  font-size: 55px;     /* match Objectives heading size */
-    font-weight: 700;    /* bold like Objectives */
-    color: #1c1c50;
-    margin-bottom: 40px
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.purpose-box {
-  
-  
-    background: #fff;
-    border-radius: 60px;
-    padding: 51px;                   /* more space inside */
-    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.08); /* deeper shadow */
-    font-size: 60px;                /* slightly larger text */
-    color: #333;
-    line-height: 1.8;
-}
-.zoom-touch {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.single-objective {
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
 }
 
-.zoom-touch:hover,
-.zoom-touch:active {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* optional glow */
-}
-
-
-
-
-
+.single-objective:nth-child(1) { animation-delay: 0.1s; }
+.single-objective:nth-child(2) { animation-delay: 0.2s; }
+.single-objective:nth-child(3) { animation-delay: 0.3s; }
+.single-objective:nth-child(4) { animation-delay: 0.4s; }
   </style>
 </head>
 <body>
